@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobimoste Elektronik AB – Smart elektronik för rehabilitering och TKM</title>
+<meta name="description" content="Mobimoste Elektronik AB i Vellinge utvecklar CE-märkt smart elektronik för rehabilitering och traditionell kinesisk medicin (TKM): meridianstimulator, smart moxibustion, EMS-massagematta och fotreflexapparat.">
+<meta name="theme-color" content="#0369A1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mobimoste Elektronik AB">
+<meta property="og:description" content="Smart elektronik för modern rehabilitering och traditionell kinesisk medicin – från Vellinge, Sverige.">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_GB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230369A1'/%3E%3Cpath d='M10 34h10l5-12 8 22 6-16 4 6h11' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Mobimoste Elektronik AB",
+  "email": "info@mobimoste.se",
+  "telephone": "+46761881831",
+  "identifier": "556813-5866",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bankgatan 2",
+    "addressLocality": "Vellinge",
+    "addressCountry": "SE"
+  }
+}
+</script>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F5FAFE;
+  --bg-alt:#EAF4FB;
+  --surface:#FFFFFF;
+  --ink:#0B1B2B;
+  --ink-2:#3E5266;
+  --ink-3:#6B7F93;
+  --line:#D9E6F0;
+  --brand:#0369A1;
+  --brand-2:#0284C7;
+  --brand-soft:#E0F2FE;
+  --warm:#C2410C;
+  --radius:18px;
+  --maxw:1180px;
+  --shadow-sm:0 1px 2px rgba(11,27,43,.05),0 2px 8px rgba(11,27,43,.04);
+  --shadow:0 2px 4px rgba(11,27,43,.04),0 12px 32px rgba(3,105,161,.08);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brand-2);outline-offset:3px;border-radius:6px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:16px;top:-60px;background:var(--brand);color:#fff;padding:10px 16px;border-radius:10px;z-index:300;text-decoration:none;font-weight:600}
+.skip:focus{top:12px}
+
+/* ---------- 三语切换：只显示当前语言 ---------- */
+body:not(.lang-sv) .show-sv,
+body:not(.lang-zh) .show-zh,
+body:not(.lang-en) .show-en{display:none!important}
+
+/* ---------- 导航 ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .3s,box-shadow .3s,backdrop-filter .3s}
+.nav.scrolled{background:rgba(255,255,255,.86);backdrop-filter:saturate(1.6) blur(16px);-webkit-backdrop-filter:saturate(1.6) blur(16px);box-shadow:0 1px 0 var(--line)}
+.nav-inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:16px;padding:14px 24px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:-.01em;margin-right:auto}
+.logo-mark{width:34px;height:34px;flex:none}
+.logo small{display:block;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);line-height:1}
+.logo b{display:block;font-size:1.08rem;line-height:1.2}
+.nav-links{display:flex;gap:2px}
+.nav-links a{color:var(--ink-2);text-decoration:none;padding:8px 13px;border-radius:999px;font-size:.92rem;font-weight:500;transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--brand);background:var(--brand-soft)}
+.nav-links a.active{color:var(--brand);background:var(--brand-soft)}
+.lang-toggle{display:flex;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang-btn{padding:6px 11px;border:0;border-radius:999px;background:transparent;color:var(--ink-2);cursor:pointer;font-family:inherit;font-weight:600;font-size:.78rem;line-height:1;transition:background .2s,color .2s}
+.lang-btn[aria-pressed="true"]{background:var(--brand);color:#fff}
+.lang-btn:not([aria-pressed="true"]):hover{color:var(--brand)}
+.menu-btn{display:none;width:42px;height:42px;border:1px solid var(--line);background:var(--surface);border-radius:12px;cursor:pointer;align-items:center;justify-content:center}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;position:relative;transition:transform .25s,background .25s}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-open .menu-btn span{background:transparent}
+.menu-open .menu-btn span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .menu-btn span::after{transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- 通用 ---------- */
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+section{padding:104px 0}
+.section-alt{background:var(--bg-alt)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;color:var(--brand);font-weight:700;margin-bottom:14px}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
+.section-title{font-size:clamp(1.7rem,3.4vw,2.55rem);line-height:1.18;font-weight:750;letter-spacing:-.02em;margin-bottom:16px;text-wrap:balance}
+.section-desc{color:var(--ink-2);max-width:640px;font-size:1.05rem}
+.section-head{margin-bottom:52px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;font-family:inherit;font-weight:600;font-size:.98rem;line-height:1;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .2s var(--ease),box-shadow .2s,background .2s,color .2s}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 20px rgba(3,105,161,.28)}
+.btn-primary:hover{background:#075985;transform:translateY(-2px);box-shadow:0 10px 28px rgba(3,105,161,.34)}
+.btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.btn svg{width:18px;height:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.icon-box{width:52px;height:52px;border-radius:14px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;margin-bottom:20px}
+.icon-box svg{width:26px;height:26px}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:150px 0 96px;overflow:hidden;background:
+  radial-gradient(900px 500px at 85% 10%,rgba(2,132,199,.16),transparent 60%),
+  radial-gradient(700px 420px at 0% 100%,rgba(14,165,233,.10),transparent 60%),
+  linear-gradient(180deg,#F0F8FE 0%,var(--bg) 100%)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(3,105,161,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(3,105,161,.05) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse at 70% 30%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 70% 30%,#000 10%,transparent 70%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 8px;background:var(--surface);border:1px solid var(--line);border-radius:999px;font-size:.84rem;font-weight:600;color:var(--ink-2);margin-bottom:24px;box-shadow:var(--shadow-sm)}
+.badge i{font-style:normal;background:var(--brand);color:#fff;border-radius:999px;padding:2px 9px;font-size:.72rem;letter-spacing:.04em}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4rem);font-weight:800;line-height:1.06;letter-spacing:-.035em;margin-bottom:22px;text-wrap:balance}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--brand) 0%,#0EA5E9 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lang-zh .hero h1{letter-spacing:0;line-height:1.2}
+.hero .lead{font-size:clamp(1.05rem,1.6vw,1.2rem);color:var(--ink-2);max-width:540px;margin-bottom:34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-visual{position:relative;aspect-ratio:1/1;max-width:480px;justify-self:end;width:100%}
+.hero-visual .disc{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0%,#E0F2FE 55%,#BAE6FD 100%);box-shadow:inset 0 -20px 60px rgba(3,105,161,.15),0 30px 80px rgba(3,105,161,.18)}
+.hero-visual svg.device{position:absolute;inset:12%}
+.pulse-line{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 3.2s var(--ease) .4s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.float-chip{position:absolute;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 14px;box-shadow:var(--shadow);font-size:.82rem;font-weight:600;display:flex;align-items:center;gap:10px;animation:bob 6s ease-in-out infinite}
+.float-chip svg{width:20px;height:20px;color:var(--brand)}
+.float-chip small{display:block;color:var(--ink-3);font-weight:500;font-size:.72rem}
+.chip-a{top:8%;left:-6%}
+.chip-b{bottom:10%;right:-4%;animation-delay:-3s}
+@keyframes bob{50%{transform:translateY(-8px)}}
+
+/* 信任条 */
+.trust{position:relative;margin-top:72px;display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.trust div{padding:22px 24px;display:flex;align-items:center;gap:14px}
+.trust div+div{border-left:1px solid var(--line)}
+.trust svg{width:28px;height:28px;color:var(--brand);flex:none}
+.trust strong{display:block;font-size:.98rem;line-height:1.3}
+.trust span{display:block;color:var(--ink-3);font-size:.82rem;line-height:1.4}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.about-text p{color:var(--ink-2);margin-bottom:16px;font-size:1.05rem}
+.pillars{display:grid;gap:14px;margin-top:28px}
+.pillar{display:flex;gap:14px;align-items:flex-start}
+.pillar .dot{width:26px;height:26px;border-radius:50%;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;flex:none;margin-top:2px}
+.pillar .dot svg{width:14px;height:14px}
+.pillar b{display:block}
+.pillar span{color:var(--ink-3);font-size:.92rem}
+.vision{position:relative;padding:44px;background:linear-gradient(150deg,#075985 0%,#0369A1 50%,#0284C7 100%);color:#fff;border:0;overflow:hidden}
+.vision::after{content:"";position:absolute;right:-80px;bottom:-80px;width:260px;height:260px;border-radius:50%;border:40px solid rgba(255,255,255,.07)}
+.vision .eyebrow{color:#BAE6FD}
+.vision h3{font-size:1.7rem;line-height:1.25;margin-bottom:16px;letter-spacing:-.01em}
+.vision p{color:#E0F2FE;font-size:1.05rem;position:relative;z-index:1}
+.vision-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px;position:relative;z-index:1}
+.vision-stats div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:14px 12px;text-align:center}
+.vision-stats b{display:block;font-size:1.35rem}
+.vision-stats span{font-size:.78rem;color:#BAE6FD}
+
+/* ---------- Products ---------- */
+.products-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.product-card{display:flex;flex-direction:column;padding:0;overflow:hidden}
+.product-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#BFDBEE}
+.product-media{position:relative;height:170px;background:linear-gradient(135deg,#F0F9FF 0%,#E0F2FE 100%);display:grid;place-items:center;border-bottom:1px solid var(--line)}
+.product-media svg{width:96px;height:96px;color:var(--brand)}
+.product-media .tag{position:absolute;top:16px;left:16px}
+.product-body{padding:28px 30px 30px;display:flex;flex-direction:column;flex:1}
+.product-body h3{font-size:1.25rem;margin-bottom:8px;letter-spacing:-.01em}
+.product-body p{color:var(--ink-2);margin-bottom:18px}
+.features{list-style:none;display:grid;gap:8px;margin-bottom:24px}
+.features li{display:flex;gap:10px;font-size:.92rem;color:var(--ink-2)}
+.features li::before{content:"";width:16px;height:16px;flex:none;margin-top:4px;background:var(--brand);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/contain no-repeat}
+.tag{display:inline-block;padding:4px 11px;background:var(--surface);color:var(--brand);border:1px solid #BFDBEE;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.04em}
+.inquire{margin-top:auto;display:inline-flex;align-items:center;gap:6px;color:var(--brand);font-weight:600;text-decoration:none;font-size:.95rem;background:none;border:0;cursor:pointer;font-family:inherit;padding:0;align-self:flex-start}
+.inquire svg{width:18px;height:18px;transition:transform .2s}
+.inquire:hover svg{transform:translateX(4px)}
+
+/* ---------- Technology ---------- */
+.tech-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.tech-card h3{font-size:1.06rem;margin-bottom:8px}
+.tech-card p{color:var(--ink-2);font-size:.93rem}
+.tech-card .metric{display:block;font-size:1.9rem;font-weight:800;letter-spacing:-.03em;color:var(--brand);line-height:1.1;margin-bottom:6px}
+.tech-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+
+/* ---------- Clinics CTA ---------- */
+.partner{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding:56px;border-radius:24px;background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.partner::before{content:"";position:absolute;inset:auto -10% -60% auto;width:520px;height:520px;background:radial-gradient(circle,rgba(14,165,233,.35),transparent 65%)}
+.partner h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.2;letter-spacing:-.02em;margin-bottom:14px;position:relative}
+.partner p{color:#B6C6D6;position:relative}
+.partner .eyebrow{color:#7DD3FC}
+.partner-steps{list-style:none;display:grid;gap:12px;position:relative;counter-reset:s}
+.partner-steps li{counter-increment:s;display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:14px 16px;border-radius:14px;font-weight:500}
+.partner-steps li::before{content:counter(s);width:28px;height:28px;border-radius:50%;background:#0EA5E9;color:#fff;display:grid;place-items:center;font-size:.85rem;font-weight:700;flex:none}
+.partner .btn{margin-top:26px;position:relative}
+
+/* ---------- News ---------- */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.news-card{display:flex;flex-direction:column}
+.news-meta{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.news-meta time{font-size:.84rem;color:var(--ink-3);font-weight:500}
+.news-card h3{font-size:1.12rem;line-height:1.4;margin-bottom:10px;letter-spacing:-.005em}
+.news-card p{color:var(--ink-2);font-size:.95rem}
+.news-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px}
+.contact-list{list-style:none;display:grid;gap:4px;margin-top:8px}
+.contact-list li{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
+.contact-list li:last-child{border-bottom:0}
+.contact-list svg{width:22px;height:22px;color:var(--brand);flex:none;margin-top:2px}
+.contact-list small{display:block;color:var(--ink-3);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.contact-list a{color:var(--ink);text-decoration:none;font-weight:600}
+.contact-list a:hover{color:var(--brand)}
+.contact-info h3{font-size:1.2rem}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.85rem;font-weight:600;color:var(--ink-2)}
+.field input,.field textarea,.field select{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:13px 15px;color:var(--ink);font:inherit;font-size:.95rem;transition:border-color .2s,box-shadow .2s,background .2s;width:100%}
+.field textarea{resize:vertical;min-height:130px}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--brand-2);background:#fff;box-shadow:0 0 0 4px rgba(2,132,199,.12)}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.86rem;color:var(--ink-2);grid-column:1/-1}
+.consent input{margin-top:4px;width:17px;height:17px;accent-color:var(--brand);flex:none}
+.form-foot{grid-column:1/-1;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.form-note{font-size:.84rem;color:var(--ink-3)}
+.form-status{grid-column:1/-1;display:none;padding:14px 16px;border-radius:12px;background:#ECFDF5;border:1px solid #A7F3D0;color:#065F46;font-size:.92rem}
+.form-status.show{display:block}
+
+/* ---------- Footer ---------- */
+footer{background:var(--ink);color:#93A6B9;padding:64px 0 28px;font-size:.92rem}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
+footer .logo{color:#fff;margin-bottom:14px}
+footer .logo small{color:#7B91A6}
+footer h4{color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a{text-decoration:none;color:#C5D3E0}
+footer a:hover{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;font-size:.84rem}
+.to-top{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;background:var(--brand);color:#fff;border:0;display:grid;place-items:center;box-shadow:var(--shadow);cursor:pointer;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s;z-index:90}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+.to-top svg{width:20px;height:20px}
+
+/* ---------- 进场动画（无 JS 时内容照常可见） ---------- */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .tech-grid{grid-template-columns:repeat(2,1fr)}
+  .news-grid{grid-template-columns:1fr 1fr}
+  .trust{grid-template-columns:1fr 1fr}
+  .trust div:nth-child(3){border-left:0}
+  .trust div:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:900px){
+  .menu-btn{display:inline-flex}
+  .nav-links{position:fixed;top:70px;left:12px;right:12px;flex-direction:column;gap:2px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px;box-shadow:var(--shadow);opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+  .menu-open .nav-links{opacity:1;transform:none;pointer-events:auto}
+  .nav-links a{padding:12px 14px;border-radius:10px;font-size:1rem}
+  .nav{background:rgba(255,255,255,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+  .hero{padding:118px 0 64px}
+  .hero-grid,.about-grid,.contact-grid,.partner{grid-template-columns:1fr}
+  .hero-visual{max-width:340px;justify-self:center;order:-1}
+  .chip-a{left:-4%}.chip-b{right:-2%}
+  .products-grid{grid-template-columns:1fr}
+  .partner{padding:36px 26px}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .footer-grid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:640px){
+  section{padding:72px 0}
+  .container,.nav-inner{padding-left:16px;padding-right:16px}
+  .logo small{display:none}
+  .lang-btn{padding:6px 9px}
+  .news-grid,.tech-grid,.trust,.form-grid{grid-template-columns:1fr}
+  .trust div+div{border-left:0;border-top:1px solid var(--line)}
+  .vision{padding:32px 24px}
+  .card{padding:24px}
+  .card.product-card{padding:0}
+  .product-body{padding:24px}
+  .hero-visual{max-width:270px}
+  .float-chip{font-size:.74rem;padding:8px 10px}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .pulse-line{stroke-dashoffset:0}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body class="lang-sv">
+
+<!-- 可复用的线性图标 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2.5-6 4 12 3-8 2 2H22"/></symbol>
+    <symbol id="i-thermo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.8V5a2 2 0 1 0-4 0v9.8a4 4 0 1 0 4 0z"/><path d="M12 9v7"/></symbol>
+    <symbol id="i-battery" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="17" height="10" rx="2"/><path d="M22 11v2M6 10v4M9.5 10v4M13 10v4"/></symbol>
+    <symbol id="i-sensor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7M5.6 5.6a9 9 0 0 0 0 12.8M18.4 5.6a9 9 0 0 1 0 12.8"/></symbol>
+    <symbol id="i-clinic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M12 9v6M9 12h6"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main"><span class="show-sv">Hoppa till innehåll</span><span class="show-zh">跳到正文</span><span class="show-en">Skip to content</span></a>
+
+<!-- 导航 -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo" aria-label="Mobimoste Elektronik AB">
+      <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#0369A1"/><path d="M10 34h10l5-12 8 22 6-16 4 6h11" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><b>Mobimoste</b><small>Elektronik AB</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Huvudmeny">
+      <a href="#about"><span class="show-sv">Om oss</span><span class="show-zh">关于我们</span><span class="show-en">About</span></a>
+      <a href="#products"><span class="show-sv">Produkter</span><span class="show-zh">产品</span><span class="show-en">Products</span></a>
+      <a href="#technology"><span class="show-sv">Teknik</span><span class="show-zh">技术</span><span class="show-en">Technology</span></a>
+      <a href="#partner"><span class="show-sv">För kliniker</span><span class="show-zh">机构合作</span><span class="show-en">For clinics</span></a>
+      <a href="#news"><span class="show-sv">Nyheter</span><span class="show-zh">新闻</span><span class="show-en">News</span></a>
+      <a href="#contact"><span class="show-sv">Kontakt</span><span class="show-zh">联系</span><span class="show-en">Contact</span></a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="Språk / Language / 语言">
+      <button class="lang-btn" data-lang="sv" aria-pressed="true" lang="sv">SV</button>
+      <button class="lang-btn" data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
+      <button class="lang-btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Meny"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="reveal">
+        <div class="badge"><i>CE</i>
+          <span class="show-sv">Svensk medicinteknik från Vellinge</span>
+          <span class="show-zh">来自瑞典 Vellinge 的医疗电子</span>
+          <span class="show-en">Swedish medtech from Vellinge</span>
+        </div>
+        <h1>
+          <span class="show-sv">Smart elektronik för <em>modern rehabilitering</em></span>
+          <span class="show-zh">智能电子<br><em>赋能现代康复</em></span>
+          <span class="show-en">Smart electronics for <em>modern rehabilitation</em></span>
+        </h1>
+        <p class="lead show-sv">Vi förenar nordisk precision med traditionell kinesisk medicin – CE-märkta enheter för kliniker, terapeuter och vård i hemmet.</p>
+        <p class="lead show-zh">以北欧精密工艺融合传统中医智慧 —— 为诊所、理疗师与家庭康复打造的 CE 认证设备。</p>
+        <p class="lead show-en">Nordic precision meets Traditional Chinese Medicine – CE-certified devices for clinics, therapists and home care.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">
+            <span class="show-sv">Se produkter</span><span class="show-zh">查看产品</span><span class="show-en">Explore products</span>
+            <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <span class="show-sv">Boka demo</span><span class="show-zh">预约演示</span><span class="show-en">Book a demo</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="disc"></div>
+        <svg class="device" viewBox="0 0 300 300" fill="none">
+          <rect x="70" y="40" width="160" height="220" rx="34" fill="#fff" stroke="#BAE6FD" stroke-width="2"/>
+          <rect x="88" y="62" width="124" height="88" rx="16" fill="#0B1B2B"/>
+          <path class="pulse-line" d="M96 110h22l8-22 14 42 10-30 7 10h47" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="150" cy="200" r="34" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="2"/>
+          <circle cx="150" cy="200" r="20" fill="#0369A1"/>
+          <path d="M143 200h14M150 193v14" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="104" cy="200" r="7" fill="#E0F2FE"/><circle cx="196" cy="200" r="7" fill="#E0F2FE"/>
+        </svg>
+        <div class="float-chip chip-a"><svg><use href="#i-thermo"/></svg><div>±0.5°C<small class="show-sv">Temperaturkontroll</small><small class="show-zh">精准温控</small><small class="show-en">Temp control</small></div></div>
+        <div class="float-chip chip-b"><svg><use href="#i-battery"/></svg><div>8 h<small class="show-sv">Per laddning</small><small class="show-zh">单次续航</small><small class="show-en">Per charge</small></div></div>
+      </div>
+    </div>
+
+    <div class="trust reveal">
+      <div><svg aria-hidden="true"><use href="#i-shield"/></svg><p><strong class="show-sv">CE-märkt</strong><strong class="show-zh">CE 认证</strong><strong class="show-en">CE-certified</strong><span class="show-sv">Hela produktlinjen</span><span class="show-zh">全产品线</span><span class="show-en">Full product line</span></p></div>
+      <div><svg aria-hidden="true"><use href="#i-pin"/></svg><p><strong class="show-sv">Svenskt bolag</strong><strong class="show-zh">瑞典公司</strong><strong class="show-en">Swedish company</strong><span>Vellinge, Skåne</span></p></div>
+      <div><svg aria-hidden="true"><use href="#i-clinic"/></svg><p><strong class="show-sv">Klinisk utvärdering</strong><strong class="show-zh">临床评估</strong><strong class="show-en">Clinical evaluation</strong><span class="show-sv">Med 3 kliniker i Malmö</span><span class="show-zh">与马尔默 3 家诊所合作</span><span class="show-en">With 3 clinics in Malmö</span></p></div>
+      <div><svg aria-hidden="true"><use href="#i-globe"/></svg><p><strong class="show-sv">Tre språk</strong><strong class="show-zh">三语服务</strong><strong class="show-en">Three languages</strong><span>Svenska · 中文 · English</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="eyebrow"><span class="show-sv">Om oss</span><span class="show-zh">关于我们</span><span class="show-en">About us</span></div>
+        <h2 class="section-title">
+          <span class="show-sv">Där vetenskap möter tradition</span>
+          <span class="show-zh">让科学与传统相遇</span>
+          <span class="show-en">Where science meets tradition</span>
+        </h2>
+        <p class="show-sv">Mobimoste Elektronik AB utvecklar smart elektronik för modern rehabilitering och traditionell kinesisk medicin (TKM). Med bas i Vellinge, Sverige, kombinerar vi nordisk precision med österländsk visdom.</p>
+        <p class="show-zh">Mobimoste Elektronik AB 致力于为现代康复和中医领域开发智能电子设备。公司总部位于瑞典 Vellinge，将北欧精密工艺与东方智慧相融合。</p>
+        <p class="show-en">Mobimoste Elektronik AB develops smart electronics for modern rehabilitation and Traditional Chinese Medicine (TCM). Based in Vellinge, Sweden, we combine Nordic precision with Eastern wisdom.</p>
+        <div class="pillars">
+          <div class="pillar"><span class="dot"><svg><use href="#i-check"/></svg></span><div><b class="show-sv">Säkerhet först</b><b class="show-zh">安全优先</b><b class="show-en">Safety first</b><span class="show-sv">Sensorer och automatisk avstängning i varje enhet.</span><span class="show-zh">每台设备均配备传感器与自动断电保护。</span><span class="show-en">Sensors and auto-shutoff built into every device.</span></div></div>
+          <div class="pillar"><span class="dot"><svg><use href="#i-check"/></svg></span><div><b class="show-sv">Utvecklat för professionell vård</b><b class="show-zh">为专业康复设计</b><b class="show-en">Built for professional care</b><span class="show-sv">Utvärderas tillsammans med kliniker.</span><span class="show-zh">与诊所合作开展评估。</span><span class="show-en">Evaluated together with clinics.</span></div></div>
+          <div class="pillar"><span class="dot"><svg><use href="#i-check"/></svg></span><div><b class="show-sv">Lokalt stöd i Sverige</b><b class="show-zh">瑞典本地支持</b><b class="show-en">Local support in Sweden</b><span class="show-sv">Personlig kontakt på svenska, kinesiska och engelska.</span><span class="show-zh">提供瑞典语、中文、英语对接服务。</span><span class="show-en">Personal contact in Swedish, Chinese and English.</span></div></div>
+        </div>
+      </div>
+      <div class="card vision reveal">
+        <div class="eyebrow"><span class="show-sv">Vår vision</span><span class="show-zh">我们的愿景</span><span class="show-en">Our vision</span></div>
+        <h3>
+          <span class="show-sv">Rehabilitering som är tillgänglig för fler</span>
+          <span class="show-zh">让康复惠及更多人</span>
+          <span class="show-en">Rehabilitation within everyone's reach</span>
+        </h3>
+        <p class="show-sv">Att göra rehabilitering mer tillgänglig genom intelligent elektronik som förenar vetenskap och tradition.</p>
+        <p class="show-zh">通过融合科学与传统的智能电子设备，让康复变得更加可及。</p>
+        <p class="show-en">To make rehabilitation more accessible through intelligent electronics that unite science and tradition.</p>
+        <div class="vision-stats">
+          <div><b>CE</b><span class="show-sv">Certifierad</span><span class="show-zh">认证</span><span class="show-en">Certified</span></div>
+          <div><b>TKM</b><span class="show-sv">Fokus</span><span class="show-zh">中医专注</span><span class="show-en">TCM focus</span></div>
+          <div><b>SE</b><span class="show-sv">Sverige</span><span class="show-zh">瑞典</span><span class="show-en">Sweden</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products" class="section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="show-sv">Produkter</span><span class="show-zh">产品系列</span><span class="show-en">Products</span></div>
+      <h2 class="section-title"><span class="show-sv">TKM-rehabiliteringsserien</span><span class="show-zh">中医康复系列</span><span class="show-en">TCM Rehabilitation Series</span></h2>
+      <p class="section-desc show-sv">Våra produkter är designade för professionell rehabilitering och är CE-märkta.</p>
+      <p class="section-desc show-zh">我们的产品专为专业康复设计，均已通过 CE 认证。</p>
+      <p class="section-desc show-en">Our products are designed for professional rehabilitation and carry CE certification.</p>
+    </div>
+    <div class="products-grid">
+
+      <article class="card product-card reveal">
+        <div class="product-media">
+          <span class="tag">CE · <span class="show-sv">NYHET</span><span class="show-zh">新品</span><span class="show-en">NEW</span></span>
+          <svg viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="22" y="14" width="52" height="68" rx="12"/><path d="M30 40h8l4-10 7 20 5-14 3 4h9"/><circle cx="48" cy="64" r="7"/></svg>
+        </div>
+        <div class="product-body">
+          <h3><span class="show-sv">Meridianstimulator Pro</span><span class="show-zh">经络刺激仪 Pro</span><span class="show-en">Meridian Stimulator Pro</span></h3>
+          <p class="show-sv">Lågfrekvent pulsterapi för meridianstimulering – CE-märkt och utvecklad med säkerheten i fokus.</p>
+          <p class="show-zh">低频脉冲经络刺激疗法，CE 认证，以安全为核心设计。</p>
+          <p class="show-en">Low-frequency pulse therapy for meridian stimulation – CE-certified and designed with safety in focus.</p>
+          <ul class="features">
+            <li><span class="show-sv">Justerbar pulsfrekvens</span><span class="show-zh">脉冲频率可调</span><span class="show-en">Adjustable pulse frequency</span></li>
+            <li><span class="show-sv">Upp till 8 h per laddning</span><span class="show-zh">单次充电最长 8 小时</span><span class="show-en">Up to 8 h per charge</span></li>
+          </ul>
+          <button class="inquire" data-product="Meridianstimulator Pro"><span class="show-sv">Skicka förfrågan</span><span class="show-zh">咨询此产品</span><span class="show-en">Send inquiry</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </article>
+
+      <article class="card product-card reveal">
+        <div class="product-media">
+          <span class="tag">TKM</span>
+          <svg viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M48 16c8 10 14 17 14 27a14 14 0 0 1-28 0c0-6 3-10 6-14 1 5 4 7 6 7-2-8 0-14 2-20z"/><rect x="28" y="66" width="40" height="14" rx="5"/><path d="M48 57v9"/></svg>
+        </div>
+        <div class="product-body">
+          <h3><span class="show-sv">Smart moxibustion</span><span class="show-zh">智能艾灸仪</span><span class="show-en">Smart Moxibustion</span></h3>
+          <p class="show-sv">Temperaturstyrd moxibustion med säkerhetssensorer. Modern teknik möter tradition.</p>
+          <p class="show-zh">温控智能艾灸，配备安全传感器，现代科技遇见传统。</p>
+          <p class="show-en">Temperature-controlled moxibustion with safety sensors. Modern tech meets tradition.</p>
+          <ul class="features">
+            <li><span class="show-sv">Temperaturreglering ±0,5 °C</span><span class="show-zh">温控精度 ±0.5°C</span><span class="show-en">±0.5 °C temperature control</span></li>
+            <li><span class="show-sv">Automatisk avstängning vid överhettning</span><span class="show-zh">过热自动断电</span><span class="show-en">Auto-shutoff on overheat</span></li>
+          </ul>
+          <button class="inquire" data-product="Smart moxibustion"><span class="show-sv">Skicka förfrågan</span><span class="show-zh">咨询此产品</span><span class="show-en">Send inquiry</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </article>
+
+      <article class="card product-card reveal">
+        <div class="product-media">
+          <span class="tag">EMS</span>
+          <svg viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="26" width="68" height="44" rx="10"/><circle cx="34" cy="42" r="4"/><circle cx="48" cy="42" r="4"/><circle cx="62" cy="42" r="4"/><circle cx="34" cy="56" r="4"/><circle cx="48" cy="56" r="4"/><circle cx="62" cy="56" r="4"/></svg>
+        </div>
+        <div class="product-body">
+          <h3><span class="show-sv">EMS-massagematta</span><span class="show-zh">EMS 按摩垫</span><span class="show-en">EMS Massage Mat</span></h3>
+          <p class="show-sv">EMS-akupressur för muskelåterhämtning och bättre cirkulation.</p>
+          <p class="show-zh">EMS 穴位按摩，促进肌肉恢复与血液循环。</p>
+          <p class="show-en">EMS acupressure for muscle recovery and improved circulation.</p>
+          <ul class="features">
+            <li><span class="show-sv">Elektrisk muskelstimulering</span><span class="show-zh">肌肉电刺激</span><span class="show-en">Electrical muscle stimulation</span></li>
+            <li><span class="show-sv">Justerbar frekvens</span><span class="show-zh">频率可调</span><span class="show-en">Adjustable frequency</span></li>
+          </ul>
+          <button class="inquire" data-product="EMS-massagematta"><span class="show-sv">Skicka förfrågan</span><span class="show-zh">咨询此产品</span><span class="show-en">Send inquiry</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </article>
+
+      <article class="card product-card reveal">
+        <div class="product-media">
+          <span class="tag"><span class="show-sv">PORTABEL</span><span class="show-zh">便携</span><span class="show-en">PORTABLE</span></span>
+          <svg viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M36 16c-8 0-12 10-12 24 0 16 4 26 6 34 2 6 6 8 12 8s9-4 9-10c0-8-5-12-5-22 0-6 4-10 4-18 0-10-6-16-14-16z"/><circle cx="62" cy="22" r="4"/><circle cx="70" cy="32" r="3.5"/><circle cx="74" cy="43" r="3"/><circle cx="74" cy="53" r="2.5"/></svg>
+        </div>
+        <div class="product-body">
+          <h3><span class="show-sv">Fotreflexapparat</span><span class="show-zh">足部反射仪</span><span class="show-en">Foot Reflexology Device</span></h3>
+          <p class="show-sv">Elektrisk fotmassage baserad på reflexologi. Lättanvänd och portabel.</p>
+          <p class="show-zh">基于反射学原理的电动足部按摩，便携易用。</p>
+          <p class="show-en">Electric foot massage based on reflexology. Portable and easy to use.</p>
+          <ul class="features">
+            <li><span class="show-sv">Kompakt och portabel</span><span class="show-zh">小巧便携</span><span class="show-en">Compact and portable</span></li>
+            <li><span class="show-sv">Laddningsbart batteri</span><span class="show-zh">可充电电池</span><span class="show-en">Rechargeable battery</span></li>
+          </ul>
+          <button class="inquire" data-product="Fotreflexapparat"><span class="show-sv">Skicka förfrågan</span><span class="show-zh">咨询此产品</span><span class="show-en">Send inquiry</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Technology -->
+<section id="technology">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="show-sv">Teknik</span><span class="show-zh">核心技术</span><span class="show-en">Technology</span></div>
+      <h2 class="section-title"><span class="show-sv">Teknik byggd för trygg behandling</span><span class="show-zh">为安全治疗而生的技术</span><span class="show-en">Technology built for safe treatment</span></h2>
+    </div>
+    <div class="tech-grid">
+      <div class="card tech-card reveal">
+        <div class="icon-box"><svg aria-hidden="true"><use href="#i-pulse"/></svg></div>
+        <span class="metric">EMS</span>
+        <h3><span class="show-sv">Pulsteknik</span><span class="show-zh">脉冲技术</span><span class="show-en">Pulse technology</span></h3>
+        <p class="show-sv">Elektrisk muskelstimulering med justerbar frekvens.</p>
+        <p class="show-zh">可调频率的肌肉电刺激技术。</p>
+        <p class="show-en">Electrical muscle stimulation with adjustable frequency.</p>
+      </div>
+      <div class="card tech-card reveal">
+        <div class="icon-box"><svg aria-hidden="true"><use href="#i-thermo"/></svg></div>
+        <span class="metric">±0.5°C</span>
+        <h3><span class="show-sv">Temperaturkontroll</span><span class="show-zh">精准温控</span><span class="show-en">Temperature control</span></h3>
+        <p class="show-sv">Mikroprocessorstyrd temperaturreglering.</p>
+        <p class="show-zh">微处理器控制的温度调节。</p>
+        <p class="show-en">Microprocessor-controlled temperature regulation.</p>
+      </div>
+      <div class="card tech-card reveal">
+        <div class="icon-box"><svg aria-hidden="true"><use href="#i-battery"/></svg></div>
+        <span class="metric">8 h</span>
+        <h3><span class="show-sv">Lång batteritid</span><span class="show-zh">长效续航</span><span class="show-en">Long battery life</span></h3>
+        <p class="show-sv">Upp till 8 timmars kontinuerlig användning per laddning.</p>
+        <p class="show-zh">单次充电可连续使用长达 8 小时。</p>
+        <p class="show-en">Up to 8 hours of continuous use per charge.</p>
+      </div>
+      <div class="card tech-card reveal">
+        <div class="icon-box"><svg aria-hidden="true"><use href="#i-sensor"/></svg></div>
+        <span class="metric">Auto-off</span>
+        <h3><span class="show-sv">Säkerhetssensor</span><span class="show-zh">安全传感</span><span class="show-en">Safety sensor</span></h3>
+        <p class="show-sv">Automatisk avstängning vid överhettning eller fel.</p>
+        <p class="show-zh">过热或异常时自动断电保护。</p>
+        <p class="show-en">Automatic shutoff on overheat or malfunction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- For clinics / partners -->
+<section id="partner" style="padding-top:0">
+  <div class="container">
+    <div class="partner reveal">
+      <div>
+        <div class="eyebrow"><span class="show-sv">För kliniker & återförsäljare</span><span class="show-zh">诊所与经销商</span><span class="show-en">For clinics & distributors</span></div>
+        <h2><span class="show-sv">Vill du använda eller sälja våra produkter?</span><span class="show-zh">希望在机构使用或代理我们的产品？</span><span class="show-en">Want to use or distribute our devices?</span></h2>
+        <p class="show-sv">Vi samarbetar med kliniker, terapeuter och återförsäljare. Berätta om din verksamhet så återkommer vi med produktinformation och villkor.</p>
+        <p class="show-zh">我们与诊所、理疗师及经销商合作。告诉我们您的机构情况，我们将提供产品资料与合作条件。</p>
+        <p class="show-en">We work with clinics, therapists and distributors. Tell us about your practice and we'll get back with product information and terms.</p>
+        <a href="#contact" class="btn btn-primary" data-topic="partner"><span class="show-sv">Bli partner</span><span class="show-zh">成为合作伙伴</span><span class="show-en">Become a partner</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <ol class="partner-steps">
+        <li><span class="show-sv">Kontakta oss via formulär eller telefon</span><span class="show-zh">通过表单或电话联系我们</span><span class="show-en">Reach out via form or phone</span></li>
+        <li><span class="show-sv">Produktdemo och dokumentation</span><span class="show-zh">产品演示与资料</span><span class="show-en">Product demo and documentation</span></li>
+        <li><span class="show-sv">Avtal, leverans och utbildning</span><span class="show-zh">签约、交付与培训</span><span class="show-en">Agreement, delivery and training</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- News -->
+<section id="news" class="section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="show-sv">Nyheter</span><span class="show-zh">最新动态</span><span class="show-en">News</span></div>
+      <h2 class="section-title"><span class="show-sv">Senaste nytt</span><span class="show-zh">公司新闻</span><span class="show-en">Latest news</span></h2>
+    </div>
+    <div class="news-grid">
+      <article class="card news-card reveal">
+        <div class="news-meta"><span class="tag"><span class="show-sv">Produkt</span><span class="show-zh">产品</span><span class="show-en">Product</span></span><time datetime="2026-10-15">2026-10-15</time></div>
+        <h3><span class="show-sv">Ny produktlansering: Meridianstimulator Pro</span><span class="show-zh">新品发布：经络刺激仪 Pro</span><span class="show-en">New launch: Meridian Stimulator Pro</span></h3>
+        <p class="show-sv">Vår senaste produkt är nu tillgänglig för förbeställning.</p>
+        <p class="show-zh">我们的最新产品现已开放预售。</p>
+        <p class="show-en">Our latest product is now available for pre-order.</p>
+      </article>
+      <article class="card news-card reveal">
+        <div class="news-meta"><span class="tag"><span class="show-sv">Certifiering</span><span class="show-zh">认证</span><span class="show-en">Certification</span></span><time datetime="2026-09-28">2026-09-28</time></div>
+        <h3><span class="show-sv">CE-certifiering klar för hela produktlinjen</span><span class="show-zh">全产品线通过 CE 认证</span><span class="show-en">CE certification complete for full line</span></h3>
+        <p class="show-sv">Alla våra produkter har nu officiell CE-certifiering.</p>
+        <p class="show-zh">我们所有产品现已获得正式 CE 认证。</p>
+        <p class="show-en">All our products now have official CE certification.</p>
+      </article>
+      <article class="card news-card reveal">
+        <div class="news-meta"><span class="tag"><span class="show-sv">Samarbete</span><span class="show-zh">合作</span><span class="show-en">Partnership</span></span><time datetime="2026-09-10">2026-09-10</time></div>
+        <h3><span class="show-sv">Nytt samarbete med kliniker i Malmö</span><span class="show-zh">与马尔默诊所达成新合作</span><span class="show-en">New partnership with clinics in Malmö</span></h3>
+        <p class="show-sv">Vi samarbetar nu med 3 kliniker för klinisk utvärdering.</p>
+        <p class="show-zh">我们正与 3 家诊所合作进行临床评估。</p>
+        <p class="show-en">We are now partnering with 3 clinics for clinical evaluation.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="show-sv">Kontakt</span><span class="show-zh">联系我们</span><span class="show-en">Contact</span></div>
+      <h2 class="section-title"><span class="show-sv">Kontakta oss</span><span class="show-zh">联系我们</span><span class="show-en">Get in touch</span></h2>
+      <p class="section-desc show-sv">Frågor om produkter, demo eller samarbete? Vi svarar normalt inom en arbetsdag.</p>
+      <p class="section-desc show-zh">关于产品、演示或合作的任何问题，我们通常在一个工作日内回复。</p>
+      <p class="section-desc show-en">Questions about products, a demo or partnership? We normally reply within one business day.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="card contact-info reveal">
+        <h3><span class="show-sv">Kontaktinformation</span><span class="show-zh">联系方式</span><span class="show-en">Contact information</span></h3>
+        <ul class="contact-list">
+          <li><svg aria-hidden="true"><use href="#i-pin"/></svg><div><small><span class="show-sv">Adress</span><span class="show-zh">地址</span><span class="show-en">Address</span></small><a href="https://www.google.com/maps/search/?api=1&query=Bankgatan+2+Vellinge" target="_blank" rel="noopener">Bankgatan 2, Vellinge, Sverige</a></div></li>
+          <li><svg aria-hidden="true"><use href="#i-phone"/></svg><div><small><span class="show-sv">Telefon</span><span class="show-zh">电话</span><span class="show-en">Phone</span></small><a href="tel:+46761881831">+46 76-188 18 31</a></div></li>
+          <li><svg aria-hidden="true"><use href="#i-mail"/></svg><div><small><span class="show-sv">E-post</span><span class="show-zh">邮箱</span><span class="show-en">Email</span></small><a href="mailto:info@mobimoste.se">info@mobimoste.se</a></div></li>
+          <li><svg aria-hidden="true"><use href="#i-doc"/></svg><div><small><span class="show-sv">Organisationsnummer</span><span class="show-zh">公司注册号</span><span class="show-en">Company reg. no.</span></small><span style="font-weight:600">556813-5866</span></div></li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <form class="form-grid" id="contactForm" novalidate>
+          <div class="field">
+            <label for="f-name"><span class="show-sv">Namn</span><span class="show-zh">姓名</span><span class="show-en">Name</span> *</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-email"><span class="show-sv">E-post</span><span class="show-zh">邮箱</span><span class="show-en">Email</span> *</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="f-org"><span class="show-sv">Företag / klinik</span><span class="show-zh">公司 / 机构</span><span class="show-en">Company / clinic</span></label>
+            <input id="f-org" name="org" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="f-topic"><span class="show-sv">Ärende</span><span class="show-zh">咨询类型</span><span class="show-en">Topic</span></label>
+            <select id="f-topic" name="topic">
+              <option value="product" data-sv="Produktfråga" data-zh="产品咨询" data-en="Product question">Produktfråga</option>
+              <option value="demo" data-sv="Boka demo" data-zh="预约演示" data-en="Book a demo">Boka demo</option>
+              <option value="partner" data-sv="Samarbete / återförsäljare" data-zh="合作 / 经销" data-en="Partnership / distribution">Samarbete / återförsäljare</option>
+              <option value="other" data-sv="Övrigt" data-zh="其他" data-en="Other">Övrigt</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="f-msg"><span class="show-sv">Meddelande</span><span class="show-zh">留言</span><span class="show-en">Message</span> *</label>
+            <textarea id="f-msg" name="message" rows="5" required></textarea>
+          </div>
+          <label class="consent">
+            <input type="checkbox" id="f-consent" required>
+            <span class="show-sv">Jag godkänner att Mobimoste behandlar mina uppgifter för att besvara min förfrågan (GDPR).</span>
+            <span class="show-zh">我同意 Mobimoste 为回复本次咨询处理我的个人信息（GDPR）。</span>
+            <span class="show-en">I agree that Mobimoste may process my details to respond to my inquiry (GDPR).</span>
+          </label>
+          <div class="form-foot">
+            <button type="submit" class="btn btn-primary"><span class="show-sv">Skicka</span><span class="show-zh">发送</span><span class="show-en">Send</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <span class="form-note show-sv">Formuläret öppnar ditt e-postprogram.</span>
+            <span class="form-note show-zh">提交后将打开您的邮件客户端。</span>
+            <span class="form-note show-en">This opens your email app.</span>
+          </div>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="logo" aria-label="Mobimoste Elektronik AB">
+          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#0284C7"/><path d="M10 34h10l5-12 8 22 6-16 4 6h11" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><b>Mobimoste</b><small>Elektronik AB</small></span>
+        </a>
+        <p class="show-sv">Smart elektronik för modern rehabilitering och traditionell kinesisk medicin.</p>
+        <p class="show-zh">专注现代康复与中医的智能电子设备。</p>
+        <p class="show-en">Smart electronics for modern rehabilitation and Traditional Chinese Medicine.</p>
+      </div>
+      <div>
+        <h4><span class="show-sv">Sidor</span><span class="show-zh">导航</span><span class="show-en">Pages</span></h4>
+        <ul>
+          <li><a href="#about"><span class="show-sv">Om oss</span><span class="show-zh">关于我们</span><span class="show-en">About</span></a></li>
+          <li><a href="#products"><span class="show-sv">Produkter</span><span class="show-zh">产品</span><span class="show-en">Products</span></a></li>
+          <li><a href="#technology"><span class="show-sv">Teknik</span><span class="show-zh">技术</span><span class="show-en">Technology</span></a></li>
+          <li><a href="#news"><span class="show-sv">Nyheter</span><span class="show-zh">新闻</span><span class="show-en">News</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4><span class="show-sv">Kontakt</span><span class="show-zh">联系</span><span class="show-en">Contact</span></h4>
+        <ul>
+          <li>Bankgatan 2, Vellinge</li>
+          <li><a href="tel:+46761881831">+46 76-188 18 31</a></li>
+          <li><a href="mailto:info@mobimoste.se">info@mobimoste.se</a></li>
+          <li>Org.nr 556813-5866</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Mobimoste Elektronik AB</span>
+      <span class="show-sv">Alla rättigheter förbehållna.</span><span class="show-zh">保留所有权利。</span><span class="show-en">All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Till toppen / Back to top"><svg aria-hidden="true"><use href="#i-up"/></svg></button>
+
+<script>
+(function(){
+  var META = {
+    sv:{html:'sv',title:'Mobimoste Elektronik AB – Smart elektronik för rehabilitering och TKM',desc:'Mobimoste Elektronik AB i Vellinge utvecklar CE-märkt smart elektronik för rehabilitering och traditionell kinesisk medicin (TKM).',menu:'Meny',thanks:'Tack! Ditt e-postprogram har öppnats – skicka meddelandet därifrån. Du kan också mejla oss direkt på info@mobimoste.se.',err:'Fyll i namn, giltig e-post, meddelande och godkänn villkoret.',inq:'Hej! Jag är intresserad av '},
+    zh:{html:'zh-CN',title:'Mobimoste Elektronik AB – 智能康复与中医电子设备',desc:'Mobimoste Elektronik AB 位于瑞典 Vellinge，专注 CE 认证的智能康复与中医电子设备。',menu:'菜单',thanks:'谢谢！已为您打开邮件客户端，请在其中发送。也可直接发邮件至 info@mobimoste.se。',err:'请填写姓名、有效邮箱、留言，并勾选同意条款。',inq:'您好，我想咨询：'},
+    en:{html:'en',title:'Mobimoste Elektronik AB – Smart electronics for rehabilitation & TCM',desc:'Mobimoste Elektronik AB, Vellinge, Sweden – CE-certified smart electronics for rehabilitation and Traditional Chinese Medicine (TCM).',menu:'Menu',thanks:'Thank you! Your email app has opened – please send the message from there. You can also email us directly at info@mobimoste.se.',err:'Please fill in name, a valid email, message and accept the consent.',inq:'Hi! I am interested in '}
+  };
+  var current = 'sv';
+
+  function store(k,v){try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k,v);}catch(e){return null}}
+
+  function setLang(lang){
+    if(!META[lang]) lang='sv';
+    current = lang;
+    document.body.className = 'lang-'+lang;
+    document.documentElement.lang = META[lang].html;
+    document.title = META[lang].title;
+    var d=document.querySelector('meta[name="description"]'); if(d) d.setAttribute('content',META[lang].desc);
+    document.querySelectorAll('.lang-btn').forEach(function(b){b.setAttribute('aria-pressed', b.dataset.lang===lang?'true':'false')});
+    document.querySelectorAll('#f-topic option').forEach(function(o){o.textContent=o.dataset[lang]});
+    document.getElementById('menuBtn').setAttribute('aria-label',META[lang].menu);
+    store('mm-lang',lang);
+  }
+
+  // 语言优先级：URL ?lang= → 上次选择 → 浏览器语言 → 瑞典语
+  var q = new URLSearchParams(location.search).get('lang');
+  var saved = store('mm-lang');
+  var nav = (navigator.language||'').toLowerCase();
+  var auto = nav.indexOf('zh')===0 ? 'zh' : nav.indexOf('sv')===0 ? 'sv' : (nav ? 'en' : 'sv');
+  setLang(META[q]?q:(META[saved]?saved:auto));
+
+  document.querySelectorAll('.lang-btn').forEach(function(b){
+    b.addEventListener('click',function(){setLang(b.dataset.lang)});
+  });
+
+  // 移动端菜单
+  var navEl=document.getElementById('nav'), menuBtn=document.getElementById('menuBtn');
+  function closeMenu(){navEl.classList.remove('menu-open');menuBtn.setAttribute('aria-expanded','false')}
+  menuBtn.addEventListener('click',function(){
+    var open=navEl.classList.toggle('menu-open');
+    menuBtn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  document.querySelectorAll('#navLinks a').forEach(function(a){a.addEventListener('click',closeMenu)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu()});
+
+  // 导航阴影 + 回到顶部
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    var y=window.scrollY;
+    navEl.classList.toggle('scrolled',y>10);
+    toTop.classList.toggle('show',y>700);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+  // 当前栏目高亮
+  var links={}; document.querySelectorAll('#navLinks a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){Object.values(links).forEach(function(l){l.classList.remove('active')}); if(links[e.target.id]) links[e.target.id].classList.add('active');}
+    })},{rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('main section[id]').forEach(function(s){so.observe(s)});
+
+    // 进场动画
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el,i){el.style.transitionDelay=(i%4)*70+'ms';ro.observe(el)});
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
+  }
+
+  // 产品“咨询”按钮 → 预填表单
+  var form=document.getElementById('contactForm'), msg=document.getElementById('f-msg'), topic=document.getElementById('f-topic');
+  document.querySelectorAll('.inquire').forEach(function(b){
+    b.addEventListener('click',function(){
+      topic.value='product';
+      msg.value=META[current].inq+b.dataset.product+'.';
+      document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+      setTimeout(function(){document.getElementById('f-name').focus({preventScroll:true})},600);
+    });
+  });
+  document.querySelectorAll('[data-topic]').forEach(function(a){a.addEventListener('click',function(){topic.value=a.dataset.topic})});
+
+  // 表单：校验后用 mailto 打开邮件客户端（无需服务器）
+  var status=document.getElementById('formStatus');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var F=form.elements, name=F['name'].value.trim(), email=F['email'].value.trim(), text=msg.value.trim();
+    var ok = name && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && text && document.getElementById('f-consent').checked;
+    status.classList.add('show');
+    if(!ok){status.style.cssText='background:#FEF2F2;border-color:#FECACA;color:#991B1B';status.textContent=META[current].err;return}
+    status.style.cssText='';
+    var t=topic.options[topic.selectedIndex].textContent;
+    var subject='['+t+'] '+name+(F['org'].value.trim()?' – '+F['org'].value.trim():'');
+    var body=text+'\n\n—\n'+name+'\n'+email+(F['org'].value.trim()?'\n'+F['org'].value.trim():'');
+    window.location.href='mailto:info@mobimoste.se?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    status.textContent=META[current].thanks;
+  });
+
+  document.getElementById('year').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
