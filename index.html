@@ -6,7 +6,13 @@
 <title>Mobimoste Elektronik AB – Svensk medicinteknik för rehabilitering</title>
 <meta name="description" content="Mobimoste Elektronik AB är ett svenskt teknikföretag i Vellinge inom medicinsk elektronik. Vi levererar smart utrustning för rehabilitering, elektroterapi och traditionell kinesisk medicin – med lokal teknisk support och service i Sverige.">
 <meta name="theme-color" content="#0369A1">
+<link rel="canonical" href="https://www.mobimoste.se/">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mobimoste.se/">
+<meta property="og:image" content="https://www.mobimoste.se/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:title" content="Mobimoste Elektronik AB">
 <meta property="og:description" content="Svenskt teknikföretag inom medicinsk elektronik – smart utrustning för rehabilitering och elektroterapi.">
 <meta property="og:locale" content="sv_SE">
@@ -18,6 +24,7 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Mobimoste Elektronik AB",
+  "url": "https://www.mobimoste.se/",
   "email": "info@mobimoste.se",
   "telephone": "+46761881831",
   "identifier": "556813-5866",
@@ -91,6 +98,7 @@ section{padding:104px 0}
 .icon-box{width:52px;height:52px;border-radius:14px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;margin-bottom:20px}
 .icon-box svg{width:26px;height:26px}
 .tag{display:inline-block;padding:3px 10px;background:var(--surface);color:var(--brand);border:1px solid #BFDBEE;border-radius:999px;font-size:.7rem;font-weight:700;letter-spacing:.04em}
+.tag.ask{background:#F1F5F9;color:#475569;border-color:#CBD5E1}
 .tag.new{background:#FFF7ED;color:#C2410C;border-color:#FED7AA}
 
 /* Hero */
@@ -447,9 +455,9 @@ footer a:hover{color:#fff}
     <div class="filters" id="filters" role="group" aria-label="Kategori"></div>
     <div class="products-grid" id="productGrid"></div>
     <p class="p-note"><svg aria-hidden="true"><use href="#i-info"/></svg>
-      <span class="show-sv">Produktinformation enligt tillverkarna JIAJIAN Medical och ZEPU Medical. CE-märkning anges endast där ett offentligt certifikat har kunnat verifieras; övrig dokumentation skickas på begäran. Produkterna är avsedda för yrkesverksamma inom vård och rehabilitering – följ alltid bruksanvisningen.</span>
-      <span class="show-zh">产品信息来自制造商佳健医疗与泽普医疗。仅对能查验到公开证书的产品标注 CE，其他资料可应要求提供。产品面向医疗与康复专业人员，请务必按说明书使用。</span>
-      <span class="show-en">Product information as provided by the manufacturers JIAJIAN Medical and ZEPU Medical. CE marking is shown only where a public certificate could be verified; other documentation is available on request. Products are intended for healthcare and rehabilitation professionals – always follow the instructions for use.</span>
+      <span class="show-sv">Produktinformation enligt tillverkarna JIAJIAN Medical och ZEPU Medical. CE-märkning anges endast där ett offentligt certifikat har kunnat verifieras. Produkter märkta ”På förfrågan” är under granskning – kontakta oss för tillgänglighet. Produkterna är avsedda för yrkesverksamma inom vård och rehabilitering – följ alltid bruksanvisningen.</span>
+      <span class="show-zh">产品信息来自制造商佳健医疗与泽普医疗。仅对能查验到公开证书的产品标注 CE；标有"欢迎咨询"的产品资料正在核实中，请联系我们了解供货情况。产品面向医疗与康复专业人员，请务必按说明书使用。</span>
+      <span class="show-en">Product information as provided by the manufacturers JIAJIAN Medical and ZEPU Medical. CE marking is shown only where a public certificate could be verified. Products marked “On request” are under review – contact us for availability. Products are intended for healthcare and rehabilitation professionals – always follow the instructions for use.</span>
     </p>
   </div>
 </section>
@@ -542,7 +550,7 @@ footer a:hover{color:#fff}
       </div>
       <div class="card reveal">
         <form class="form-grid" id="contactForm" novalidate>
-          <div class="field"><label for="f-name"><span class="show-sv">Namn</span><span class="show-zh">姓名</span><span class="show-en">Name</span> *</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-name"><span class="show-sv">Namn</span><span class="show-zh">姓名</span><span class="show-en">Name</span> *</label><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"><input id="f-name" name="name" type="text" autocomplete="name" required></div>
           <div class="field"><label for="f-email"><span class="show-sv">E-post</span><span class="show-zh">邮箱</span><span class="show-en">Email</span> *</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
           <div class="field"><label for="f-org"><span class="show-sv">Företag / klinik</span><span class="show-zh">公司 / 机构</span><span class="show-en">Company / clinic</span></label><input id="f-org" name="org" type="text" autocomplete="organization"></div>
           <div class="field"><label for="f-topic"><span class="show-sv">Ärende</span><span class="show-zh">咨询类型</span><span class="show-en">Topic</span></label>
@@ -555,13 +563,13 @@ footer a:hover{color:#fff}
           </div>
           <div class="field full"><label for="f-msg"><span class="show-sv">Meddelande</span><span class="show-zh">留言</span><span class="show-en">Message</span> *</label><textarea id="f-msg" name="message" rows="5" required></textarea></div>
           <label class="consent"><input type="checkbox" id="f-consent" required>
-            <span class="show-sv">Jag godkänner att Mobimoste behandlar mina uppgifter för att besvara min förfrågan (GDPR).</span>
-            <span class="show-zh">我同意 Mobimoste 为回复本次咨询处理我的个人信息（GDPR）。</span>
-            <span class="show-en">I agree that Mobimoste may process my details to respond to my inquiry (GDPR).</span>
+            <span class="show-sv">Jag godkänner att Mobimoste behandlar mina uppgifter för att besvara min förfrågan. Läs vår <a href="integritetspolicy.html" style="color:var(--brand)">integritetspolicy</a>.</span>
+            <span class="show-zh">我同意 Mobimoste 为回复本次咨询处理我的个人信息。请阅读<a href="integritetspolicy.html?lang=zh" style="color:var(--brand)">隐私政策</a>。</span>
+            <span class="show-en">I agree that Mobimoste may process my details to respond to my inquiry. Read our <a href="integritetspolicy.html?lang=en" style="color:var(--brand)">privacy policy</a>.</span>
           </label>
           <div class="form-foot">
             <button type="submit" class="btn btn-primary"><span class="show-sv">Skicka</span><span class="show-zh">发送</span><span class="show-en">Send</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-            <span class="form-note show-sv">Formuläret öppnar ditt e-postprogram.</span><span class="form-note show-zh">提交后将打开您的邮件客户端。</span><span class="form-note show-en">This opens your email app.</span>
+            <span class="form-note show-sv">Eller mejla oss direkt: info@mobimoste.se</span><span class="form-note show-zh">也可直接发邮件至 info@mobimoste.se</span><span class="form-note show-en">Or email us directly: info@mobimoste.se</span>
           </div>
           <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
         </form>
@@ -606,7 +614,7 @@ footer a:hover{color:#fff}
     </div>
     <div class="footer-bottom">
       <span>© <span id="year">2026</span> Mobimoste Elektronik AB</span>
-      <span class="show-sv">Alla rättigheter förbehållna.</span><span class="show-zh">保留所有权利。</span><span class="show-en">All rights reserved.</span>
+      <span><a href="integritetspolicy.html" class="show-sv">Integritetspolicy</a><a href="integritetspolicy.html?lang=zh" class="show-zh">隐私政策</a><a href="integritetspolicy.html?lang=en" class="show-en">Privacy policy</a> · <span class="show-sv">Inga spårningscookies</span><span class="show-zh">不使用追踪 cookie</span><span class="show-en">No tracking cookies</span></span>
     </div>
   </div>
 </footer>
@@ -790,23 +798,23 @@ var PRODUCTS = [
         'Plates for traditional gua sha treatment in five shapes adapted to the body\'s contours.'),
   specs:[['type',T('Fisk · njure · halvcirkel · oval · kvadrat','鱼形 · 肾形 · 半圆 · 椭圆 · 方形','Fish · kidney · semicircle · oval · square')],['mat',T('Hornliknande plast','仿牛角塑料','Horn-like plastic')],['pkg',T('1 st/ask','1 片/盒','1 pc/box')]]},
  /* ---------- 康复训练设备（泽普 ZEPU）图片暂引用厂家官网，展后替换为本地高清图 ---------- */
- {id:'k2000a',cat:'rehab',src:'https://img.medicalexpo.com/images_me/photo-g/304340-20437571.jpg',ce:false,maker:'ZEPU Medical',model:'ZEPU-K2000A',
+ {id:'k2000a',cat:'rehab',ce:false,maker:'ZEPU Medical',model:'ZEPU-K2000A',
   name:T('Arm- och bentränare, aktiv/passiv (sittande)','上下肢主被动运动康复机（坐式）','Active/passive arm and leg trainer (seated)'),
   desc:T('Funktionell träning av över- och underextremiteter med flera lägen i en enhet: utvärdering, passiv, assisterad, aktiv-passiv och aktiv träning med justerbart motstånd.','一机多用的上下肢功能训练设备：评估、被动、助力、主被动、主动（阻力可调）等多种模式。','Functional training of upper and lower limbs with several modes in one unit: assessment, passive, assisted, active-passive and active training with adjustable resistance.'),
   specs:[['type',T('Arm och ben, sittande','上下肢，坐式','Arm and leg, seated')],['prog',T('Passiv · assisterad · aktiv-passiv · aktiv','被动 · 助力 · 主被动 · 主动','Passive · assisted · active-passive · active')]]},
- {id:'k2000k',cat:'rehab',src:'https://omo-oss-image.thefastimg.com/portal-saas/pg2024092018183682091/cms/image/f0f44abf-7864-40cf-a4f8-26ab19becf65.jpg',ce:false,maker:'ZEPU Medical',model:'ZEPU-K2000K',
+ {id:'k2000k',cat:'rehab',ce:false,maker:'ZEPU Medical',model:'ZEPU-K2000K',
   name:T('Armtränare i flera riktningar, aktiv/passiv','上肢多方位主被动康复机','Multi-directional active/passive arm trainer'),
   desc:T('Mjukvarustyrd träning av axel, armbåge och handled i tre rörelseplan, stegvis från passiv till aktiv. Med biofeedback och skydd mot överstretch vid spasticitet.','软件引导肩、肘、腕在三个运动平面联合训练，由被动逐步过渡到主动；带生物反馈和痉挛防过伸保护。','Software-guided training of shoulder, elbow and wrist in three planes, progressing from passive to active. With biofeedback and protection against overstretching in spasticity.'),
   specs:[['freq',T('0–60 varv/min','0–60 转/分','0–60 rpm')],['out',T('Motstånd 0–20 N','阻力 0–20 N','Resistance 0–20 N')],['prog',T('5 lägen: passiv, assisterad, aktiv-passiv, aktiv, spasticitetslindring','5 种：被动、助力、主被动、主动、痉挛缓解','5 modes: passive, assisted, active-passive, active, spasm relief')]]},
- {id:'k2000e',cat:'rehab',src:'https://omo-oss-image1.thefastimg.com/portal-saas/pg2024092018183682091/cms/image/c638b2bd-9ac8-4ae5-9de4-a55b5d4c5a99.jpg',ce:false,maker:'ZEPU Medical',model:'ZEPU-K2000E',
+ {id:'k2000e',cat:'rehab',ce:false,maker:'ZEPU Medical',model:'ZEPU-K2000E',
   name:T('Bentränare vid sängen, aktiv/passiv','床旁下肢主被动运动康复机','Bedside active/passive leg trainer'),
   desc:T('För patienter som ligger till sängs: koordinerad aktiv/passiv benträning direkt vid sängen. Spasmdetektering, röstguidning, elektrisk höjdjustering och stort nödstopp.','供卧床患者在床旁做下肢主被动协调训练；智能痉挛检测、语音提示、电动升降、大号急停按钮。','For bedridden patients: coordinated active/passive leg training at the bedside. Spasm detection, voice guidance, electric height adjustment and a large emergency stop.'),
   specs:[['feat',T('Justerbar benhöjd och armlängd · data och statistik','腿高与训练臂长度可调 · 训练数据统计','Adjustable leg height and arm length · training data')]]},
- {id:'k2000f',cat:'rehab',src:'https://omo-oss-image1.thefastimg.com/portal-saas/pg2024092018183682091/cms/image/cb269e0c-9af0-4c13-a056-c9b2df01c1b0.jpg',ce:false,maker:'ZEPU Medical',model:'ZEPU-K2000F',
+ {id:'k2000f',cat:'rehab',ce:false,maker:'ZEPU Medical',model:'ZEPU-K2000F',
   name:T('Arm- och bentränare för barn','儿童上下肢主被动运动康复机','Arm and leg trainer for children'),
   desc:T('Utvecklad för barn med rörelsenedsättning. Fyra lägen, gränssnitt för pulsövervakning, röststyrning, nödstopp, underarmsstöd och höjdjustering.','专为运动障碍儿童设计；4 种训练模式，心率保护接口，语音控制，急停，前臂支撑，高度可调。','Designed for children with movement impairments. Four modes, heart-rate protection interface, voice control, emergency stop, forearm support and height adjustment.'),
   specs:[['prog',T('Passiv · assisterad · aktiv-passiv · aktiv','被动 · 助力 · 主被动 · 主动','Passive · assisted · active-passive · active')],['disp','HDMI · USB']]},
- {id:'s1',cat:'rehab',src:'https://omo-oss-image.thefastimg.com/portal-saas/pg2024092018183682091/cms/image/aeb1c939-21f2-452c-81ff-1aa5d4844018.jpg',ce:false,maker:'ZEPU Medical',model:'ZEPU-S1',
+ {id:'s1',cat:'rehab',ce:false,maker:'ZEPU Medical',model:'ZEPU-S1',
   name:T('Helkroppstränare','全身功能康复训练器','Whole-body rehabilitation trainer'),
   desc:T('Kopplad träning av alla fyra extremiteter: armarna driver benen eller den friska sidan driver den påverkade. För tidig aerob träning och koordination.','四肢联动训练：上肢带动下肢、健侧带动患侧；用于早期有氧与协调训练。','Linked training of all four limbs: arms drive legs or the healthy side drives the affected side. For early aerobic and coordination training.'),
   specs:[['feat',T('Armcirkulation och bentramp · kopplade lägen','上肢环绕与下肢蹬踏 · 联动模式','Arm cranking and leg pedalling · linked modes')]]}
@@ -814,15 +822,15 @@ var PRODUCTS = [
 
 (function(){
   var META = {
-    sv:{html:'sv',title:'Mobimoste Elektronik AB – Svensk medicinteknik för rehabilitering',desc:'Mobimoste Elektronik AB är ett svenskt teknikföretag i Vellinge som levererar medicinsk elektronik för rehabilitering och elektroterapi, med lokal teknisk support.',menu:'Meny',thanks:'Tack! Ditt e-postprogram har öppnats – skicka meddelandet därifrån.',err:'Fyll i namn, giltig e-post, meddelande och godkänn villkoret.',inq:'Hej! Jag är intresserad av ',more:'Visa detaljer',spec:'Tekniska data',ask:'Skicka förfrågan',model:'Modell',ce:'CE-märkt enligt MDR (EU) 2017/745, klass IIa. EU-certifikat HZ 2140536-1 utfärdat av TÜV Rheinland (anmält organ). <a href="https://www.certipedia.com/quality_marks/9000015647?locale=en&qm_locale=en" target="_blank" rel="noopener">Kontrollera certifikatet</a>',noce:'Inget offentligt CE-certifikat hittades för denna produkt. Kontakta oss för aktuell regulatorisk status och dokumentation.',isnew:'NYHET'},
-    zh:{html:'zh-CN',title:'Mobimoste Elektronik AB – 瑞典医疗电子科技公司',desc:'Mobimoste Elektronik AB 是位于瑞典 Vellinge 的医疗电子科技公司，提供康复、电疗与中医领域的智能设备及本地技术支持。',menu:'菜单',thanks:'谢谢！已为您打开邮件客户端，请在其中发送。',err:'请填写姓名、有效邮箱、留言，并勾选同意条款。',inq:'您好，我想咨询：',more:'查看详情',spec:'技术参数',ask:'咨询此产品',model:'型号',ce:'已获欧盟 MDR（EU 2017/745）CE 认证，IIa 类。证书编号 HZ 2140536-1，发证机构 TÜV 莱茵（公告机构）。<a href="https://www.certipedia.com/quality_marks/9000015647?locale=en&qm_locale=en" target="_blank" rel="noopener">查验证书</a>',noce:'暂未查到该产品公开的 CE 证书。如需了解最新认证状态及资料，请联系我们。',isnew:'新品'},
-    en:{html:'en',title:'Mobimoste Elektronik AB – Swedish medical technology for rehabilitation',desc:'Mobimoste Elektronik AB is a Swedish technology company in Vellinge supplying medical electronics for rehabilitation and electrotherapy, with local technical support.',menu:'Menu',thanks:'Thank you! Your email app has opened – please send the message from there.',err:'Please fill in name, a valid email, message and accept the consent.',inq:'Hi! I am interested in ',more:'View details',spec:'Technical data',ask:'Send inquiry',model:'Model',ce:'CE-marked under MDR (EU) 2017/745, class IIa. EU certificate HZ 2140536-1 issued by TÜV Rheinland (notified body). <a href="https://www.certipedia.com/quality_marks/9000015647?locale=en&qm_locale=en" target="_blank" rel="noopener">Verify certificate</a>',noce:'No public CE certificate was found for this product. Contact us for its current regulatory status and documentation.',isnew:'NEW'}
+    sv:{html:'sv',title:'Mobimoste Elektronik AB – Svensk medicinteknik för rehabilitering',desc:'Mobimoste Elektronik AB är ett svenskt teknikföretag i Vellinge som levererar medicinsk elektronik för rehabilitering och elektroterapi, med lokal teknisk support.',menu:'Meny',thanks:'Tack! Ditt e-postprogram har öppnats – skicka meddelandet därifrån.',err:'Fyll i namn, giltig e-post, meddelande och godkänn villkoret.',inq:'Hej! Jag är intresserad av ',more:'Visa detaljer',spec:'Tekniska data',ask:'Skicka förfrågan',model:'Modell',ce:'CE-märkt enligt MDR (EU) 2017/745, klass IIa. EU-certifikat HZ 2140536-1 utfärdat av TÜV Rheinland (anmält organ). <a href="https://www.certipedia.com/quality_marks/9000015647?locale=en&qm_locale=en" target="_blank" rel="noopener">Kontrollera certifikatet</a>',noce:'På förfrågan – dokumentation och CE-status för denna produkt granskas. Kontakta oss för tillgänglighet och aktuell information.',isnew:'NYHET',onreq:'PÅ FÖRFRÅGAN',sent:'Tack! Ditt meddelande har skickats. Vi återkommer normalt inom en arbetsdag.',fail:'Meddelandet kunde inte skickas. Mejla oss direkt på info@mobimoste.se.',sending:'Skickar…'},
+    zh:{html:'zh-CN',title:'Mobimoste Elektronik AB – 瑞典医疗电子科技公司',desc:'Mobimoste Elektronik AB 是位于瑞典 Vellinge 的医疗电子科技公司，提供康复、电疗与中医领域的智能设备及本地技术支持。',menu:'菜单',thanks:'谢谢！已为您打开邮件客户端，请在其中发送。',err:'请填写姓名、有效邮箱、留言，并勾选同意条款。',inq:'您好，我想咨询：',more:'查看详情',spec:'技术参数',ask:'咨询此产品',model:'型号',ce:'已获欧盟 MDR（EU 2017/745）CE 认证，IIa 类。证书编号 HZ 2140536-1，发证机构 TÜV 莱茵（公告机构）。<a href="https://www.certipedia.com/quality_marks/9000015647?locale=en&qm_locale=en" target="_blank" rel="noopener">查验证书</a>',noce:'欢迎咨询 —— 该产品的认证资料正在核实中，如需了解供货情况及最新信息，请联系我们。',isnew:'新品',onreq:'欢迎咨询',sent:'谢谢！您的留言已发送，我们通常在一个工作日内回复。',fail:'发送失败，请直接发邮件至 info@mobimoste.se。',sending:'正在发送…'},
+    en:{html:'en',title:'Mobimoste Elektronik AB – Swedish medical technology for rehabilitation',desc:'Mobimoste Elektronik AB is a Swedish technology company in Vellinge supplying medical electronics for rehabilitation and electrotherapy, with local technical support.',menu:'Menu',thanks:'Thank you! Your email app has opened – please send the message from there.',err:'Please fill in name, a valid email, message and accept the consent.',inq:'Hi! I am interested in ',more:'View details',spec:'Technical data',ask:'Send inquiry',model:'Model',ce:'CE-marked under MDR (EU) 2017/745, class IIa. EU certificate HZ 2140536-1 issued by TÜV Rheinland (notified body). <a href="https://www.certipedia.com/quality_marks/9000015647?locale=en&qm_locale=en" target="_blank" rel="noopener">Verify certificate</a>',noce:'On request – documentation and CE status for this product are under review. Contact us for availability and current information.',isnew:'NEW',onreq:'ON REQUEST',sent:'Thank you! Your message has been sent. We normally reply within one business day.',fail:'The message could not be sent. Please email us at info@mobimoste.se.',sending:'Sending…'}
   };
   var cur='sv', curCat='all', curProduct=null;
   function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
   function tx(v){return (v&&typeof v==='object')?v[cur]:v}
   window.PH="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'%3E%3Crect width='64' height='48' fill='%23F0F9FF'/%3E%3Cpath d='M14 26h8l4-9 6 17 4-11 3 4h11' fill='none' stroke='%23BAE6FD' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E";
-  function pimg(p){return p.src||('images/products/'+p.img+'.webp')}
+  function pimg(p){return p.img?('images/products/'+p.img+'.webp'):PH}
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 
   /* ---- 渲染产品 ---- */
@@ -834,7 +842,7 @@ var PRODUCTS = [
     }).join('');
   }
   function tags(p){
-    return (p.ce?'<span class="tag">CE</span>':'')+(p.isNew?'<span class="tag new">'+META[cur].isnew+'</span>':'');
+    return (p.ce?'<span class="tag">CE</span>':'<span class="tag ask">'+META[cur].onreq+'</span>')+(p.isNew?'<span class="tag new">'+META[cur].isnew+'</span>':'');
   }
   function renderGrid(){
     grid.innerHTML=PRODUCTS.filter(function(p){return curCat==='all'||p.cat===curCat}).map(function(p){
@@ -918,7 +926,7 @@ var PRODUCTS = [
   }else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
   document.querySelectorAll('[data-topic]').forEach(function(a){a.addEventListener('click',function(){topic.value=a.dataset.topic})});
 
-  /* ---- 表单（mailto） ---- */
+  /* ---- 表单（FormSubmit → info@mobimoste.se） ---- */
   var form=document.getElementById('contactForm'), status=document.getElementById('formStatus');
   form.addEventListener('submit',function(e){
     e.preventDefault();
@@ -926,15 +934,21 @@ var PRODUCTS = [
     var ok=name&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)&&text&&document.getElementById('f-consent').checked;
     status.classList.add('show');
     if(!ok){status.style.cssText='background:#FEF2F2;border-color:#FECACA;color:#991B1B';status.textContent=META[cur].err;return}
-    status.style.cssText='';
+    if(F['_honey'].value){return}
+    status.style.cssText='';status.textContent=META[cur].sending;
+    var btn=form.querySelector('button[type=submit]');btn.disabled=true;
     var t=topic.options[topic.selectedIndex].textContent;
-    var subject='['+t+'] '+name+(org?' – '+org:'');
-    var body=text+'\n\n—\n'+name+'\n'+email+(org?'\n'+org:'');
-    window.location.href='mailto:info@mobimoste.se?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
-    status.textContent=META[cur].thanks;
+    fetch('https://formsubmit.co/ajax/info@mobimoste.se',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({_subject:'[Webb] '+t+' – '+name,_template:'table',_captcha:'false',Namn:name,'E-post':email,_replyto:email,'Företag':org,'Ärende':t,'Meddelande':text,'Språk':cur})})
+    .then(function(r){return r.json()}).then(function(j){
+      if(j&&String(j.success)==='true'){status.textContent=META[cur].sent;form.reset();}
+      else throw new Error('fail');
+    }).catch(function(){status.style.cssText='background:#FEF2F2;border-color:#FECACA;color:#991B1B';status.textContent=META[cur].fail;})
+    .finally(function(){btn.disabled=false;});
   });
   document.getElementById('year').textContent=new Date().getFullYear();
 })();
 </script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f633a16f5c944dba8c2a12423aa26637"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
