@@ -474,7 +474,7 @@ footer a:hover{color:#fff}
     </div>
     <div class="mf-grid">
       <div class="card mf-card reveal"><div class="icon-box"><svg aria-hidden="true"><use href="#i-shield"/></svg></div><span class="metric">ISO 13485</span><h3><span class="show-sv">Kvalitetssystem</span><span class="show-zh">质量体系</span><span class="show-en">Quality system</span></h3><p class="show-sv">Certifierat kvalitetsledningssystem för medicintekniska produkter samt GMP-revision.</p><p class="show-zh">通过医疗器械质量管理体系认证及 GMP 审核。</p><p class="show-en">Certified quality management system for medical devices and GMP audit.</p></div>
-      <div class="card mf-card reveal"><div class="icon-box"><svg aria-hidden="true"><use href="#i-doc"/></svg></div><span class="metric">34</span><h3><span class="show-sv">Patent</span><span class="show-zh">项专利</span><span class="show-en">Patents</span></h3><p class="show-sv">Uppfinnings-, nyttighetsmodell- och designpatent.</p><p class="show-zh">包括发明专利、实用新型与外观设计专利。</p><p class="show-en">Invention, utility model and design patents.</p></div>
+      <div class="card mf-card reveal"><div class="icon-box"><svg aria-hidden="true"><use href="#i-doc"/></svg></div><span class="metric">34</span><h3><span class="show-sv">Patent</span><span class="show-zh">项专利</span><span class="show-en">Patents</span></h3><p class="show-sv">Uppfinnings- och designpatent.</p><p class="show-zh">包括发明专利与外观设计专利。</p><p class="show-en">Invention and design patents.</p></div>
       <div class="card mf-card reveal"><div class="icon-box"><svg aria-hidden="true"><use href="#i-factory"/></svg></div><span class="metric">2 mdr</span><h3><span class="show-sv">Nålar per år</span><span class="show-zh">年产针灸针（支）</span><span class="show-en">Needles per year</span></h3><p class="show-sv">Årlig kapacitet: ca 2 miljarder akupunkturnålar och 30 miljoner elektroder.</p><p class="show-zh">年产能：针灸针约 20 亿支，电极片约 3000 万片。</p><p class="show-en">Annual capacity: about 2 billion needles and 30 million electrodes.</p></div>
       <div class="card mf-card reveal"><div class="icon-box"><svg aria-hidden="true"><use href="#i-pulse"/></svg></div><span class="metric">MDR · FDA</span><h3><span class="show-sv">Verifierade godkännanden</span><span class="show-zh">可查验的认证</span><span class="show-en">Verified approvals</span></h3><p class="show-sv">TÜV Rheinland: ISO 13485 (SX 2140536-1) och MDR-certifikat för sterila akupunkturnålar (HZ 2140536-1). FDA 510(k) K192568 för självhäftande elektroder.</p><p class="show-zh">TÜV 莱茵：ISO 13485 证书（SX 2140536-1）及无菌针灸针 MDR 证书（HZ 2140536-1）；自粘电极片获美国 FDA 510(k) 许可（K192568）。</p><p class="show-en">TÜV Rheinland: ISO 13485 (SX 2140536-1) and MDR certificate for sterile acupuncture needles (HZ 2140536-1). FDA 510(k) K192568 for self-adhesive electrodes.</p></div>
     </div>
@@ -680,7 +680,7 @@ var L = {
 function T(sv,zh,en){return {sv:sv,zh:zh,en:en}}
 var STEEL = T('Rostfritt stål 06Cr19Ni10 (GB/T 4240)','06Cr19Ni10 奥氏体不锈钢（GB/T 4240）','Stainless steel 06Cr19Ni10 (GB/T 4240)');
 var EO = T('Etylenoxid (EO), steril','环氧乙烷灭菌','Ethylene oxide (EO), sterile');
-var PKG5 = T('Plastpåse 500 st · blister 200 st · med/utan guidetub 100 st · aluminiumblister 100 st per ask','塑料袋 500 支 · 纸塑泡罩 200 支 · 带管/不带管 100 支 · 铝箔泡罩 100 支（每盒）','Plastic bag 500 · paper blister 200 · with/without tube 100 · aluminium blister 100 pcs per box');
+var PKG5 = T('Plastpåse 500 st · blister 200 st · med/utan införingsrör 100 st · aluminiumblister 100 st per ask','塑料袋 500 支 · 纸塑泡罩 200 支 · 带管/不带管 100 支 · 铝箔泡罩 100 支（每盒）','Plastic bag 500 · paper blister 200 · with/without tube 100 · aluminium blister 100 pcs per box');
 var WAVE3 = T('Asymmetrisk bifasisk: kontinuerlig, intermittent, tät-gles','不对称双向脉冲：连续波、断续波、疏密波','Asymmetric biphasic: continuous, intermittent, dense-sparse');
 
 var PRODUCTS = [
@@ -804,7 +804,7 @@ var PRODUCTS = [
   specs:[['type',T('Arm och ben, sittande','上下肢，坐式','Arm and leg, seated')],['prog',T('Passiv · assisterad · aktiv-passiv · aktiv','被动 · 助力 · 主被动 · 主动','Passive · assisted · active-passive · active')]]},
  {id:'k2000k',cat:'rehab',ce:false,maker:'ZEPU Medical',model:'ZEPU-K2000K',img:'zepu-k2000k',
   name:T('Armtränare i flera riktningar, aktiv/passiv','上肢多方位主被动康复机','Multi-directional active/passive arm trainer'),
-  desc:T('Mjukvarustyrd träning av axel, armbåge och handled i tre rörelseplan, stegvis från passiv till aktiv. Med biofeedback och skydd mot överstretch vid spasticitet.','软件引导肩、肘、腕在三个运动平面联合训练，由被动逐步过渡到主动；带生物反馈和痉挛防过伸保护。','Software-guided training of shoulder, elbow and wrist in three planes, progressing from passive to active. With biofeedback and protection against overstretching in spasticity.'),
+  desc:T('Mjukvarustyrd träning av axel, armbåge och handled i tre rörelseplan, stegvis från passiv till aktiv. Med biofeedback och skydd mot översträckning vid spasticitet.','软件引导肩、肘、腕在三个运动平面联合训练，由被动逐步过渡到主动；带生物反馈和痉挛防过伸保护。','Software-guided training of shoulder, elbow and wrist in three planes, progressing from passive to active. With biofeedback and protection against overstretching in spasticity.'),
   specs:[['freq',T('0–60 varv/min','0–60 转/分','0–60 rpm')],['out',T('Motstånd 0–20 N','阻力 0–20 N','Resistance 0–20 N')],['prog',T('5 lägen: passiv, assisterad, aktiv-passiv, aktiv, spasticitetslindring','5 种：被动、助力、主被动、主动、痉挛缓解','5 modes: passive, assisted, active-passive, active, spasm relief')]]},
  {id:'k2000e',cat:'rehab',ce:false,maker:'ZEPU Medical',model:'ZEPU-K2000E',img:'zepu-k2000e',
   name:T('Bentränare vid sängen, aktiv/passiv','床旁下肢主被动运动康复机','Bedside active/passive leg trainer'),
@@ -816,7 +816,7 @@ var PRODUCTS = [
   specs:[['prog',T('Passiv · assisterad · aktiv-passiv · aktiv','被动 · 助力 · 主被动 · 主动','Passive · assisted · active-passive · active')],['disp','HDMI · USB']]},
  {id:'s1',cat:'rehab',ce:false,maker:'ZEPU Medical',model:'ZEPU-S1',img:'zepu-s1',
   name:T('Helkroppstränare','全身功能康复训练器','Whole-body rehabilitation trainer'),
-  desc:T('Kopplad träning av alla fyra extremiteter: armarna driver benen eller den friska sidan driver den påverkade. För tidig aerob träning och koordination.','四肢联动训练：上肢带动下肢、健侧带动患侧；用于早期有氧与协调训练。','Linked training of all four limbs: arms drive legs or the healthy side drives the affected side. For early aerobic and coordination training.'),
+  desc:T('Kopplad träning av alla fyra extremiteter: armarna driver benen eller den friska sidan driver den drabbade. För tidig aerob träning och koordination.','四肢联动训练：上肢带动下肢、健侧带动患侧；用于早期有氧与协调训练。','Linked training of all four limbs: arms drive legs or the healthy side drives the affected side. For early aerobic and coordination training.'),
   specs:[['feat',T('Armcirkulation och bentramp · kopplade lägen','上肢环绕与下肢蹬踏 · 联动模式','Arm cranking and leg pedalling · linked modes')]]}
 ];
 
